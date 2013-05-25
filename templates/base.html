@@ -4,6 +4,11 @@
         <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8" />
+
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" />
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet" />
+
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
                 
         <!--[if IE]>
@@ -26,13 +31,25 @@
         <header id="banner">
                 <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
                 <img src="{{ SITEURL }}/theme/img/me.jpg" alt="Me"/>
-                <p class="about">I'm Allan Whatmough, a web developer based in London, UK.</p>
+                <p class="about">I'm Allan Whatmough, a web developer based in London.</p>
         </header><!-- /#banner -->
         {% block content %}
         {% endblock %}
         <footer id="footer" class="body">
+                <span class="icons">
+                    <a href="https://twitter.com/allanw">
+                        <i class="icon-twitter"></i>
+                    </a>
+                    <a href="https://github.com/allanw">
+                        <i class="icon-github"></i>
+                    </a>
+                    <a href="http://www.linkedin.com/pub/allan-whatmough/6/612/761">
+                        <i class="icon-linkedin"></i>
+                    </a>
+                </span>
+
                 <p class="footer">
-                     Powered by <a href="http://getpelican.com/">Pelican</a>.
+                    Powered by <a href="http://getpelican.com/">Pelican</a>.
                 </p>
         </footer>
     </div>
